@@ -52,17 +52,17 @@ public class ArticleController {
     }
 
 //    //게시글 1개 조회
-//    // GET : /articles/{id}
-//    @GetMapping("/{id}")
-//    public ResponseEntity<Article> getArticle(@PathVariable Long id){
-//
-//
-//        Article article = articleService.findById(id);
-//
-//        return ResponseEntity
-//                .status(HttpStatus.OK)
-//                .body(article);
-//    }
+    // GET : /articles/{id}
+    @GetMapping("/{id}")
+    public ResponseEntity<Article> getArticle(@PathVariable Long id){
+
+
+        Article article = articleService.findById(id);
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(article);
+    }
 
 
 }

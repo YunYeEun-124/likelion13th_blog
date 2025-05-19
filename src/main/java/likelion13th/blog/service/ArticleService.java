@@ -45,16 +45,16 @@ public class ArticleService {
     }
 
 //    //게시글 1개 조회
-//    public Article findById(Long id){
-//
-//        //반복문 이용하여 일치하는 게시글 찾기
-//        for(Article article: articleDB){
-//            if(article.getId().equals(id)) {
-//                return article;
-//            }
-//        }
-//        //해당 id의 게시글이 존재하지 않는 경우
-//        throw new NoSuchElementException(id+"번 게시글을 찾을 수 없습니다.");
-//    }
+    public Article findById(Long id){
+
+        //반복문 이용하여 일치하는 게시글 찾기
+        for(Article article: articleDB){
+            if(article.getId().equals(id)) {
+                return article;
+            }
+        }
+        //해당 id의 게시글이 존재하지 않는 경우
+        throw new NoSuchElementException(id+"번 게시글을 찾을 수 없습니다.");
+    }
 
 }
